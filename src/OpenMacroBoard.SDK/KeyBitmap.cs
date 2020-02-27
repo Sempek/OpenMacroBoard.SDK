@@ -6,7 +6,7 @@ namespace OpenMacroBoard.SDK
     /// <summary>
     /// Represents a bitmap that can be used as key images
     /// </summary>
-    public sealed partial class KeyBitmap : IEquatable<KeyBitmap>, IKeyBitmapDataAccess
+    public class KeyBitmap : IEquatable<KeyBitmap>, IKeyBitmapDataAccess
     {
         /// <summary>
         /// This property can be used to create new KeyBitmaps

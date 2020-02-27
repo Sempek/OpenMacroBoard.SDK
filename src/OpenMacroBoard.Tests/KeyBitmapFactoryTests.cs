@@ -4,7 +4,7 @@ using FluentAssertions;
 using OpenMacroBoard.SDK;
 using Xunit;
 
-namespace StreamDeckSharp.Tests
+namespace OpenMacroBoard.SDK
 {
     public class KeyBitmapFactoryTests
     {

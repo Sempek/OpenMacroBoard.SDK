@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net40</TargetFramework>
+    <TargetFramework>net46</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Christian Wischenbart</Authors>
     <Company>OpenMacroBoard</Company>
@@ -17,6 +17,9 @@
   <ItemGroup>
     <None Remove="VirtualBoardControl.xaml" />
     <None Remove="VirtualBoardWindow.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Reactive" Version="4.3.2" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="VirtualBoardControl.xaml">
