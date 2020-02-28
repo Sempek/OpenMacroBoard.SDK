@@ -44,10 +44,20 @@ namespace OpenMacroBoard.SDK
         bool IKeyBitmapDataAccess.IsNull
             => rawBitmapData == null;
 
-        /// <remarks>
-        /// Byte order is B-G-R, and pixels are stored left-to-right and top-to-bottom
-        /// </remarks>
-        private readonly byte[] rawBitmapData;
+    /// <summary>
+    /// Used when you want to maintain a copy of the native bitmap format.
+    /// </summary>
+    public virtual object NativeBitmap => throw new NotImplementedException();
+
+    /// <summary>
+    /// Used when you are keeping native bitmap information.
+    /// </summary>
+    public virtual int NativeColorChannels => throw new NotImplementedException();
+
+    /// <remarks>
+    /// Byte order is B-G-R, and pixels are stored left-to-right and top-to-bottom
+    /// </remarks>
+    private readonly byte[] rawBitmapData;
         private readonly int stride;
         private int? cachedHashCode = null;
 
